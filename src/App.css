@@ -1,38 +1,59 @@
-.App {
-  text-align: center;
+/* *********** Google Font ************* */
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap");
+
+body {
+  font-family: "Roboto Condensed" sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+/* ________Variable______ */
+:root {
+  --primary-white: #fff;
+  --primary-orange: #f9ab00;
+  --primary-dark: rgba(255, 255, 255, 0);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+/******************* Navbar **********************/
+.logo {
+  width: 10rem;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+/******************* Menu Links **********************/
+.nav a.nav-link {
+  /* font-weight: 500; */
+  font-size: 0.8rem;
+  letter-spacing: 0.0375rem;
+  cursor: pointer;
 }
 
-.App-link {
-  color: #61dafb;
+nav ul li {
+  text-transform: uppercase;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* ______Color and Space between Links_______ */
+.navbar-nav > li a {
+  /* Space between links */
+  margin-right: 0.75rem;
+  margin-left: 0.75rem;
+  color: var(--primary-white) !important;
+
+  /* use this code for avoiding of jump in border-top */
+  border-top: 0.1875rem solid var(--primary-dark);
+}
+
+/* LOGO */
+.navbar-brand {
+  max-width: 17.25rem;
+  padding: 0 !important;
+  height: 4rem !important;
+}
+
+/* Orange border on the top of Links */
+.navbae-nav > li > a.active,
+.navbar-nav > li > a.active:focus {
+  border-top: 0.1875rem solid var(--primary-orange);
+}
+
+/* Hover Links */
+.navbae-nav > li > a.hover {
+  border-top: 0.1875rem solid var(--primary-orange);
 }
