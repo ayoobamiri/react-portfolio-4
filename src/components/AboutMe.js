@@ -10,8 +10,8 @@ const AboutMe = () => {
             <img className="profile-img" src={author} alt="me" />
           </div>
         </div>
-        <div className="col-lg-6 col-xm-12">
-          <h1 className="about-heading mb-2">ABOUT ME</h1>
+        <div className="col-lg-6 col-xm-12 mt-5">
+          <h1 className="about-heading ">ABOUT ME</h1>
           <p>
             Since beginning my journey as a freelance four years ago, I've done
             remote work for agencies, consulted for startups, and collaborated
